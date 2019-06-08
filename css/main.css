@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/*basic reset*/
+/*GLOBALS*/
+
+div,p,body,header,footer,section,article,nav {
+  margin: 0;
+  padding: 0;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+	font-family:'Nanum Gothic', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+    line-height: 1.5;
+	color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited {
+    text-decoration:none;
+    color: #313131;
+}
+
+a:hover, a:active {
+    text-decoration:none;
+    color: #666; }
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+    display: none;
+}
+
+
+/*Site Container*/
+.siteContainer{
+    margin: auto;
+    width: 920px;
+    padding-left: 0px;
+    background-color:  #666633;
+    /*overflow: hidden;*/
+}
+
+
+
+header{
+    /*background-color: white;*/
+    display: flex;
+    margin-top: auto;
+    padding-top: 10px;
+    overflow: hidden; /*fixes colapsing parent*/
+    min-height: 70px;
+    display: flex;
+    width: 920px;
+    justify-content: space-around;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header ul{
+    margin:0;
+    padding: 0;
+}
+
+header li{
+    width: 100px;
+    height: 30px;
+    float:left;
+    display:inline;
+    justify-content: space-around;
+    padding-top: 80px;
+    margin-left: 0px;
+    /*background-color: black;  */
+}
+
+header .logo {
+    display: flex;
+    float: left;
+    width: 250px;
+    height: 130px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 10px;
+    padding-righ: 10px;
+    margin-left: 10px;
+}
+header nav{
+    float: right;
+
+}
+header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #00ffff;
+    font-weight: bold;
+}
+
+
+
+/*Promotional section*/
+#carousel{
+    width: 920px;
+    height:  500px;
+    min-height: 40px;
+    background: url(../images/home-banner.jpg) no-repeat;
+    padding-bottom: 0px;
+    background-size:98%;
+    background-position:bottom;
+    padding-bottom:0px;
+    margin-left: 0px;
+    text-align: left;
+    color: white;
+}
+
+#carousel-text{
+    margin-top: 0px;
+    width: 500px;
+    height:  500px;
+    min-height: 40px;
+    background-color: #38393a;
+    opacity: 0.5;
+
+}
+#carousel h1{
+    font-size: 44px;
+    margin: 0px 0 0 20px;  
+}
+#carousel h2{
+    font-size: 24px;
+    margin: 0px 0px 0px 20px; 
+}
+#carousel p{
+    font-size: 10px;
+    padding-top: 10px;
+    margin: 0px 0px 0px 20px; 
+}
+
+#carousel p:hover{
+    font-size: 30px;
+    margin: 0px 0px 0px 20px; 
+}
+
+
+/*Events section*/
+.events{
+  width: 920px;
+  height:  800px;
+  min-height: 40px;
+  background-color: #3d3d5c;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.products {
+    display:flex;
+    justify-content: space-around;
+}
+
+#box1{
+    float:left;
+    display:flex;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+#box1 p{
+    margin-top: 400px;
+    text-align: justify-all; 
+
+}
+
+#box2{
+    float:right;
+    display:flex;
+    width: 300px;
+    height: 300px;
+    
+    background-color: blue;
+}
+
+/*
+
+#boxTopL{
+    float:left;
+    display:flex;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxTopL h3 {
+        float:left;
+        display:flex;
+        width: 440px;
+        height:  200px;
+        background-color: #800000;
+
+}
+
+#boxTopR{
+    float: right;
+    display:flex;
+    width: 440px;
+    height:  200px;
+    background-color: black;
+    /*background: url(../images/fada.jpg) no-repeat;
+
+}
+
+
+/* Sidebar*/
+aside#sidebar{
+    float: right;
+    width: 400px;
+    margin-top: 10px;
+}
+/*  Main-Col*/
+article #main-col{
+    float: left;
+    width: 200px;
+    
+}
+
+aside #sidebar .quote input, aside#sidebar .textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+
+
+ /*footer*/
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    margin-bottom: 0px;
+    overflow: hidden; /*fixes colapsing parent*/
+    text-align: center;
+}
+
+#footerNav {
+    float: left;
+    width: 500px;
+}
+
+#copyRight {
+    float: right;
+    width: 310px;
+}
+
+/*services*/
+ul #services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background:  #e6e6e6;
+}
+
+
+/* Media Queries */
+@media (max-width:768px){
+    header,
+    header nav,
+    header nav li
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+}
